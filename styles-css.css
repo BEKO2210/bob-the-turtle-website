@@ -1,0 +1,177 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header und Navigation */
+header {
+    background-color: #35a79c;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem; /* Vergrößert die Buttons */
+    font-size: 1.2rem; /* Größere Schriftgröße */
+    border-radius: 10px; /* Runde Ecken */
+    background-color: #3498db;
+    transition: all 0.4s ease-in-out; /* Für sanfte Übergänge */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pulse-Animation */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Button Hover-Effekte */
+nav ul li a:hover {
+    background-color: #2980b9; /* Farbe ändern beim Hover */
+    transform: scale(1.1); /* Vergrößern beim Hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Schatten hinzufügen */
+}
+
+/* Pulsieren und leuchtende Effekte beim Hover */
+nav ul li a:hover::before {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Drehen beim Hover */
+nav ul li a:hover {
+    transform: scale(1.2) rotate(0deg); /* Größer werden */
+    transition: all 0.3s ease-in-out; /* Schnelle Animation */
+}
+
+nav ul li a:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.8), 0 0 30px rgba(0, 183, 255, 0.6);
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Hauptinhalt */
+main {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Hero-Sektion mit Parallax-Effekt */
+.hero {
+    background-image: url('your-image-path.jpg'); /* Bildpfad anpassen */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Button-Stile mit Hover-Effekten */
+.cta-button, .learn-more {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover, .learn-more:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.8), 0 0 30px rgba(0, 183, 255, 0.6);
+}
+
+/* Features Sektion */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex-basis: 30%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Scroll-Animation - Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: auto;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob die Schildkröte - Eine Perspektive aus dem Panzer</title>
+    <link rel="stylesheet" href="styles-css.css">
+    <style>
+        /* Animationen für die neue Überschrift */
+        .animated-title {
+            font-size: 2.5rem;
+            color: #fff; /* Textfarbe weiß */
+            text-align: center;
+            padding: 2rem; /* Mehr Padding für das Feld */
+            margin-bottom: 1rem;
+            background-color: #2c3e50; /* Dunklerer Hintergrund für das Feld */
+            border-radius: 10px; /* Leicht abgerundete Ecken */
+            animation: fadeIn 2s ease-out, slideIn 1.5s ease-out;
+            max-width: 1000px; /* Begrenzte Breite */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Button-Stile für die neuen Buttons */
+        .special-button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .special-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+
+        /* Newsletter Button */
+        .newsletter-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .newsletter-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index-html.html">Startseite</a></li>
+                <li><a href="diet-html.html">Ernährung</a></li>
+                <li><a href="habitat-html.html">Lebensraum</a></li>
+                <li><a href="care-html.html">Schildkrötenpflege</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Neue animierte Überschrift mit farbigem Hintergrund -->
+        <div class="animated-title">Bob die Schildkröte</div>
+
+        <section class="hero fade-in">
+            <h1>Triff Bob, die Schildkröte</h1>
+            <p>Erkunde die Welt aus der Perspektive einer Schildkröte!</p>
+            <a href="#about" class="cta-button">Mehr erfahren</a>
+        </section>
+
+        <section id="about" class="fade-in">
+            <h2>Über Bob</h2>
+            <p>Hallo! Ich bin Bob, eine freundliche Schildkröte mit einer Leidenschaft dafür, meine Erlebnisse zu teilen. Begleite mich, während wir in die faszinierende Welt der Schildkröten eintauchen – von unserer Ernährung über unsere Lebensräume bis hin zu allem dazwischen!</p>
+        </section>
+
+        <section class="features fade-in">
+            <div class="feature">
+                <h3>Ernährung</h3>
+                <p>Entdecke, was Schildkröten wie ich gerne fressen!</p>
+                <a href="diet-html.html" class="learn-more">Mehr erfahren</a>
+            </div>
+            <div class="feature">
+                <h3>Lebensraum</h3>
+                <p>Erforsche, wo Schildkröten gerne leben und sich aufhalten.</p>
+                <a href="habitat-html.html" class="learn-more">Mehr erfahren</a>
+            </div>
+            <div class="feature">
+                <h3>Schildkrötenpflege</h3>
+                <p>Finde heraus, wie man Schildkröten wie mich pflegt!</p>
+                <a href="care-html.html" class="learn-more">Mehr erfahren</a>
+            </div>
+        </section>
+
+        <!-- Zusätzliche Sektion für Bob's großes Pflanzenbuch -->
+        <section class="fade-in">
+            <h2>Bob's großes Pflanzenbuch 🌱📖</h2>
+            <p>In Bob's großes Pflanzenbuch nehme ich dich mit auf eine Reise durch meinen Tag! 🌞 Von dem Moment, in dem ich morgens meine Augen öffne und die ersten Sonnenstrahlen genieße, bis zu dem Augenblick, wenn ich mich abends zur Ruhe lege – ich erzähle dir alles über die wunderbaren Pflanzen, die mir auf meinem Weg begegnen. 🐢🌿</p>
+            <p>Während ich mich durch meinen Tag fresse, entdecke ich verschiedene Pflanzen, die für uns Schildkröten nicht nur lecker, sondern auch wichtig für unsere Gesundheit sind. 🌸✨ Von schmackhaftem Löwenzahn bis hin zu köstlichem Klee – erfahre, warum diese Pflanzen nicht nur für mich, sondern auch für deine eigene Gartenwelt von Bedeutung sind. Komm mit und lass uns zusammen die faszinierende Welt der Pflanzen entdecken, aus meiner Sicht, als Griechische Landschildkröte! 🌼🐢</p>
+
+            <!-- Button zum Vorstellen des Buchs -->
+            <a href="buchvorstellung-html.html" class="special-button">Buchvorstellung</a>
+            
+            <!-- Button zum Kaufen und Bestellen des Buchs -->
+            <a href="kaufen-html.html" class="special-button">Kaufen & Bestellen</a>
+
+            <!-- Button für den Newsletter -->
+            <a href="newsletter-html.html" class="newsletter-button">Newsletter abonnieren</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bob die Schildkröte. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script-js.js"></script>
+</body>
+</html>
